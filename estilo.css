@@ -12,7 +12,10 @@ h1, h2, h3 {
     font-family: 'Cormorant Garamond', serif;
 }
 
-
+a:focus {
+    outline: 3px solid #C58A3A;
+    outline-offset: 4px;
+}
 
 header {
     background-color: #071526;
@@ -44,7 +47,7 @@ nav a:hover {
     transition: 0.5s;
 }
 
-/* Section fotos profissionais */
+/* Section pré-sobre */
 
 .pre-sobre {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/foto\ para\ 2\ seção.png");
@@ -87,7 +90,7 @@ nav a:hover {
     color: white;
 }
 
-/* Section sobre + contratar agora */
+/* Section sobre nós*/
 .sobre {
     display: flex;
     justify-content: space-between;
@@ -136,7 +139,7 @@ nav a:hover {
 }
 
 
-/* Section de Serviços */
+/* Section de Cursos */
 .cursos {
     padding: 5%;
     text-align: center;
@@ -150,13 +153,28 @@ nav a:hover {
 .cursos-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cursos-item:first-child {
+    background-color: #F3EBDD;
+    border: 2px solid #C58A3A;
+}
+
+.cursos-item:nth-child(3) {
+    background-color: #F3EBDD;
+    border: 2px solid #C58A3A;
 }
 
 .cursos-item {
-    width: 22%;
+    flex: 1;
+    min-width: 220px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #C58A3A;
 }
 
 .cursos-item p {
