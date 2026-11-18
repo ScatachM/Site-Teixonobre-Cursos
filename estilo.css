@@ -47,7 +47,7 @@ nav a:hover {
 /* Section fotos profissionais */
 
 .pre-sobre {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/foto para 2 seção.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/foto\ para\ 2\ seção.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,18 +83,19 @@ nav a:hover {
 }
 
 .pre-sobre .ver-mais a:hover {
-    background-color: white;
-    color: #071526;
+    background-color: #174D3B;
+    color: white;
 }
 
 /* Section sobre + contratar agora */
 .sobre {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     padding: 5%;
     flex-direction: column;
-    background-color: #174D3B;
+    background-color: #071526;
 }
 
 .sobre h1 {
@@ -106,8 +107,17 @@ nav a:hover {
 .sobre p {
     font-size: 1.2rem;
     max-width: 80%;
+    color: white;
+}
+
+.sobre .titulo {
+    font-size: 1.2rem;
     margin-bottom: 3%;
     color: white;
+}
+
+.sobre .contratar {
+    margin-top: 3%;
 }
 
 .sobre .contratar a {
@@ -121,8 +131,8 @@ nav a:hover {
 }
 
 .sobre .contratar a:hover {
-    background-color: white;
-    color: #174D3B;
+    background-color: #174D3B;
+    color: white;
 }
 
 
@@ -256,6 +266,7 @@ nav a:hover {
 
 .empresa {
     width: 45%;
+    text-align: justify;
 }
 
 .empresa h3 {
